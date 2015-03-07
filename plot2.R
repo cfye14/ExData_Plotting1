@@ -29,7 +29,3 @@ plot(powersub2$Global_active_power ~ powersub2$DateTime, type="l",
 
 ##reset graphics
 dev.off()
-
-##show plot in RStudio 'plots' screen device
-plot(powersub2$Global_active_power ~ powersub2$DateTime, type="l", 
-     ylab="Global Active Power (kilowatts)", xlab="")
