@@ -1,5 +1,5 @@
 ##This script assumes the dataset is downloaded from the url provided on the project page
-##at Coursera,unzipped, and the text file is placed in the working directory
+##at Coursera, unzipped, and the text file is placed in the working directory
 power_consump1 <- read.csv("household_power_consumption.txt", sep=";", dec=".", na.strings="?"
                            ,colClasses=c(rep("character",2), rep("numeric",7)))
 
@@ -17,5 +17,3 @@ hist(powersub1$Global_active_power, col="red", main="Global Active Power"
 dev.off()
 
 ##show plot in RStudio 'plots' screen device
-hist(powersub1$Global_active_power, col="red", main="Global Active Power"
-     ,xlab="Global Active Power (kilowatts)")
